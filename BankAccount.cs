@@ -50,6 +50,18 @@ namespace classes
             allTransactions.Add(withdrawl);
         }
 
+        public string GetAccountHistory()
+        {
+            var report = new System.Text.StringBuilder();
+            report.AppendLine("Date\t\tAmount\tNote");
+            foreach (var item in allTransactions)
+            {
+                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+            }
+            return report.ToString();
+
+        }
+
         private static int accountNumberSeed = 1234567890;
 
         public BankAccount(string name, decimal initialBalance)
