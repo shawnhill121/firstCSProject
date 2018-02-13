@@ -25,12 +25,28 @@ namespace classes
 
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
-
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount of depoist must be positive.");
+            }
+            var deposit = new Transaction(amount, date, note);
+            allTransactions.Add(deposit);
         }
 
         public void MakeWithdrawl(decimal amount, DateTime date, string note)
         {
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawl must be positive.");
 
+            }
+            if (Balance - amount < 0)
+            {
+                throw new InvalidOperationException("You do not have sufficent funds for this withdrawl.");
+            }
+
+            var withdrawl = new Transaction(-amount, date, note);
+            allTransactions.Add(withdrawl);
         }
 
         private static int accountNumberSeed = 1234567890;
