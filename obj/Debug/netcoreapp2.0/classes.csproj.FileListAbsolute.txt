@@ -1,0 +1,10 @@
+D:\Abysmal Gale\classes\obj\Debug\netcoreapp2.0\classes.csproj.CoreCompileInputs.cache
+D:\Abysmal Gale\classes\obj\Debug\netcoreapp2.0\classes.AssemblyInfoInputs.cache
+D:\Abysmal Gale\classes\obj\Debug\netcoreapp2.0\classes.AssemblyInfo.cs
+D:\Abysmal Gale\classes\bin\Debug\netcoreapp2.0\classes.deps.json
+D:\Abysmal Gale\classes\bin\Debug\netcoreapp2.0\classes.runtimeconfig.json
+D:\Abysmal Gale\classes\bin\Debug\netcoreapp2.0\classes.runtimeconfig.dev.json
+D:\Abysmal Gale\classes\bin\Debug\netcoreapp2.0\classes.dll
+D:\Abysmal Gale\classes\bin\Debug\netcoreapp2.0\classes.pdb
+D:\Abysmal Gale\classes\obj\Debug\netcoreapp2.0\classes.dll
+D:\Abysmal Gale\classes\obj\Debug\netcoreapp2.0\classes.pdb
